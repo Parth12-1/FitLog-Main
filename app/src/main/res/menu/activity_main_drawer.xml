@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+<!--    <group android:checkableBehavior="single">-->
+<!--        Home ->-->
+<!--                Gym Schedule ->-->
+<!--                    Schedule-->
+<!--                    Edit Schedule-->
+<!--                Exercise Log ->-->
+<!--                    Add Exercises-->
+<!--                    Exercise History-->
+<!--                    Edit Goal-->
+<!--                Food Log ->-->
+<!--                    Add Food-->
+<!--                    Food History-->
+<!--                    Custom Calories-->
+<!--                    Edit Goal-->
+<!--&ndash;&gt;-->
+<!--        <item-->
+<!--            android:id="@+id/nav_home"-->
+<!--            android:icon="@drawable/ic_menu_camera"-->
+<!--            android:title="@string/menu_home" />-->
+<!--        <item-->
+<!--            android:id="@+id/nav_gallery"-->
+<!--            android:icon="@drawable/ic_menu_gallery"-->
+<!--            android:title="@string/menu_gallery" />-->
+
+<!--    </group>-->
+
+
+
+
+    <item
+        android:id="@+id/nav_home"
+
+        android:title="@string/menu_home" />
+
+    <item android:title="Gym Schedule">
+        <menu>
+            <item
+                android:id="@+id/nav_schedule"
+
+                android:title="Schedule" />
+        </menu>
+    </item>
+
+
+    <item android:title="Exercise Log">
+        <menu>
+            <item
+                android:id="@+id/nav_add_exercises"
+
+                android:title="Add Exercises" />
+            <item
+                android:id="@+id/nav_exercise_history"
+
+                android:title="Exercise History" />
+        </menu>
+    </item>
+
+    <item android:title="Food Log">
+        <menu>
+            <item
+                android:id="@+id/nav_add_food"
+
+                android:title="Add Food" />
+            <item
+                android:id="@+id/nav_food_history"
+
+                android:title="Food History" />
+
+
+        </menu>
+    </item>
+
+
+</menu>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+
+
+<!--    <fragment-->
+<!--        android:id="@+id/nav_gallery"-->
+<!--        android:name="com.example.fitlog.ui.gallery.GalleryFragment"-->
+<!--        android:label="@string/menu_gallery"-->
+<!--        tools:layout="@layout/fragment_gallery" />-->
+
+
+<!--//////////////////////////////////////////////////////////////////////////////////////-->
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.fitlog.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_schedule"
+        android:name="com.example.fitlog.ui.schedule.ScheduleFragment"
+        android:label="Schedule"
+        tools:layout="@layout/fragment_schedule" />
+
+    <fragment
+        android:id="@+id/nav_add_exercises"
+        android:name="com.example.fitlog.ui.addexercise.AddexerciseFragment"
+        android:label="Exercises"
+        tools:layout="@layout/fragment_addexercise" />
+
+    <fragment
+        android:id="@+id/nav_exercise_history"
+        android:name="com.example.fitlog.ui.exercisehistory.ExercisehistoryFragment"
+        android:label="Exercise History"
+        tools:layout="@layout/fragment_exercisehistory" />
+
+    <fragment
+        android:id="@+id/nav_add_food"
+        android:name="com.example.fitlog.ui.addfood.AddfoodFragment"
+        android:label="Add Food"
+        tools:layout="@layout/fragment_addfood" />
+
+    <fragment
+        android:id="@+id/nav_food_history"
+        android:name="com.example.fitlog.ui.foodhistory.FoodhistoryFragment"
+        android:label="Food History"
+        tools:layout="@layout/fragment_foodhistory" />
+
+
+
+</navigation>

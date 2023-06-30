@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_Schedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.612" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="297dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="196dp"
+        android:translationY="-180dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/muscletxt">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/legbtn"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="72dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="78dp"
+            android:background="@color/white"
+            android:text="leg"
+            android:textColor="@color/logoblue"
+            app:backgroundTint="@null"
+            app:strokeColor="@color/logoblue"
+            app:strokeWidth="1dp"
+            tools:ignore="TextContrastCheck" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/pullbtn"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="72dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="0dp"
+            android:layout_toLeftOf="@id/legbtn"
+            android:background="@color/logoblue"
+            android:text="pull"
+            android:textColor="@color/white"
+            app:backgroundTint="@null"
+            tools:ignore="TextContrastCheck" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/pushbtn"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="72dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="3dp"
+            android:layout_marginRight="0dp"
+            android:layout_toLeftOf="@id/pullbtn"
+            android:background="@color/white"
+            android:text="push"
+            android:textColor="@color/logoblue"
+            app:backgroundTint="@null"
+            tools:ignore="TextContrastCheck" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="7dp"
+            android:id="@+id/restbtn"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="72dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="0dp"
+            android:layout_toLeftOf="@id/legbtn"
+            android:background="@color/logoblue"
+            android:text="rest"
+            android:textColor="@color/white"
+            app:backgroundTint="@null"
+            tools:ignore="TextContrastCheck" />/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="Schedule"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/muscletxt"
+        android:layout_width="405dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="56dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="What muscle did you hit instead?"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calenderv" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="1dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="Workout Split"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="18sp"
+        android:translationX="-47dp"
+        android:translationY="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/splitSwitch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="Bi-Weekly"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="16sp"
+        android:translationX="-60dp"
+        android:translationY="-45dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/splitSwitch" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="Adaptive"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="16sp"
+        android:translationX="-60dp"
+        android:translationY="-45dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/splitSwitch" />
+
+    <Switch
+        android:id="@+id/splitSwitch"
+        android:layout_width="54dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginBottom="56dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textOff="Bi-Weekly"
+        android:textOn="Adaptive"
+        android:textSize="16sp"
+        android:translationX="-60dp"
+        android:translationY="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/sunextBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="36dp"
+        android:background="@color/logoblue"
+        android:text="NEXT"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <CalendarView
+        android:id="@+id/calenderv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
